@@ -69,7 +69,7 @@ nav {
   padding: 0 2rem;
 }
 
-/* Book Hero */
+/* Hero */
 .book-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -87,7 +87,7 @@ nav {
 .cover-wrapper {
   position: relative;
   width: 100%;
-  max-width: 420px;
+  max-width: 380px;
   aspect-ratio: 2/3;
   background: #111;
   border-radius: 4px;
@@ -118,8 +118,8 @@ nav {
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,0.5) 0%,
-    rgba(0,0,0,0.2) 40%,
-    rgba(0,0,0,0.2) 60%,
+    rgba(0,0,0,0.15) 40%,
+    rgba(0,0,0,0.15) 60%,
     rgba(0,0,0,0.6) 100%
   );
 }
@@ -137,7 +137,7 @@ nav {
 
 .cover-subtitle {
   font-family: var(--sans);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 300;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -147,11 +147,11 @@ nav {
 
 .cover-author {
   font-family: var(--sans);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.55);
   margin-top: auto;
   padding-top: 2rem;
 }
@@ -162,13 +162,23 @@ nav {
   flex-direction: column;
 }
 
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
 .book-headline {
   font-family: var(--serif);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.4;
   color: var(--fg);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .book-desc {
@@ -180,23 +190,14 @@ nav {
 }
 
 .book-cta {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
-.coming {
-  font-family: var(--sans);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
-
+/* Email Form (shared) */
 .email-form {
   display: flex;
   gap: 0.5rem;
-  max-width: 380px;
+  max-width: 420px;
 }
 
 .email-form input[type="email"] {
@@ -246,72 +247,181 @@ nav {
   margin-top: 0.5rem;
 }
 
-/* Read Preview */
-.read-preview {
+/* Social Proof */
+.social-proof {
   padding: 3rem 0;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-.read-preview h3 {
-  font-family: var(--sans);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--fg-dim);
-  margin-bottom: 1rem;
+.quotes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-.story-cards {
+.quotes-grid blockquote {
+  padding: 0;
+  border: none;
+}
+
+.quotes-grid blockquote p {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--fg);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.quotes-grid cite {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-style: normal;
+  color: var(--fg-dim);
+  letter-spacing: 0.02em;
+}
+
+/* Section labels */
+.section-label {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--fg);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* What's Inside */
+.whats-inside {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.story-hooks {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.story-card {
-  display: block;
-  padding: 1.5rem;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 6px;
-  text-decoration: none;
-  color: var(--fg);
-  transition: border-color 0.2s, background 0.2s;
-  max-width: 480px;
-}
-
-.story-card:hover {
-  border-color: var(--accent);
-  background: rgba(255,255,255,0.02);
-}
-
-.story-title {
+.hook {
   font-family: var(--serif);
-  font-size: 1.3rem;
-  font-style: italic;
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.story-meta {
-  font-family: var(--sans);
-  font-size: 0.7rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: var(--fg-dim);
-  letter-spacing: 0.05em;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(255,255,255,0.08);
 }
 
-.story-desc {
+.hook strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.and-more {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--fg-dim);
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Read Sample */
+.read-sample {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.sample-sub {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  color: var(--fg-dim);
+  margin-bottom: 1.5rem;
+}
+
+.read-btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--bg);
+  background: var(--fg);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.read-btn:hover {
+  background: var(--fg-dim);
+}
+
+/* About Brief */
+.about-brief {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.about-brief p {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--fg-dim);
+  margin-bottom: 1rem;
+}
+
+.about-brief a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.about-brief a:hover {
+  text-decoration: underline;
+}
+
+.text-link {
   font-family: var(--sans);
   font-size: 0.8rem;
-  color: var(--fg-dim);
-  margin-top: 0.75rem;
-  line-height: 1.5;
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  letter-spacing: 0.02em;
+}
+
+.text-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Final CTA */
+.final-cta {
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+}
+
+.final-cta h3 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.final-cta .email-form {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.final-cta .privacy {
+  text-align: center;
 }
 
 /* Footer */
 footer {
-  padding: 3rem 0;
+  padding: 2rem 0;
   border-top: 1px solid rgba(255,255,255,0.06);
   text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 footer a {
@@ -394,11 +504,12 @@ footer a:hover { color: var(--accent); }
     padding: 2rem 0 3rem;
     min-height: auto;
   }
-  .cover-wrapper { max-width: 300px; margin: 0 auto; }
+  .cover-wrapper { max-width: 280px; margin: 0 auto; }
   .cover-title { font-size: 2.5rem; }
   .book-headline { font-size: 1.3rem; }
-  .email-form { flex-direction: column; }
+  .email-form { flex-direction: column; max-width: 100%; }
   .email-form button { padding: 0.85rem; }
+  .quotes-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .about-page { padding: 2rem 0; }
   .about-page h1 { font-size: 2rem; }
 }
