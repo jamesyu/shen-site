@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: shen-site
+    runtime: node
+    buildCommand: npm install && node build-story.js
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production

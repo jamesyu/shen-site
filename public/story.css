@@ -1,0 +1,126 @@
+.story-container {
+  max-width: 680px;
+}
+
+.story-header {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin-bottom: 2.5rem;
+}
+
+.back {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--fg-dim);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.back:hover { color: var(--accent); }
+
+.story-header h1 {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.story-byline {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+}
+
+/* Story body */
+.story-body h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+  margin: 3rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.story-body h2:first-child {
+  margin-top: 0;
+}
+
+.story-body p {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  color: var(--fg);
+}
+
+.story-body hr {
+  border: none;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.story-body hr::after {
+  content: '⁂';
+  color: var(--fg-dim);
+  font-size: 1.2rem;
+  letter-spacing: 0.5em;
+}
+
+.story-body strong {
+  font-weight: 500;
+  color: var(--fg);
+}
+
+/* Transcript styling */
+.story-body p strong:first-child {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+/* Reasoning trace lists */
+.story-body ol, .story-body ul {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0 0 1.2rem 1.5rem;
+  color: var(--fg);
+}
+
+.story-body li {
+  margin-bottom: 0.5rem;
+}
+
+.story-body code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  color: var(--accent);
+  background: rgba(255,255,255,0.04);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+/* Footer */
+.story-footer {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.story-footer .signup {
+  border-top: none;
+  padding-top: 0;
+}
+
+@media (max-width: 480px) {
+  .story-header h1 { font-size: 2.2rem; }
+  .story-body p { font-size: 1.05rem; }
+}
