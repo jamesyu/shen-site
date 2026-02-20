@@ -281,6 +281,10 @@ nav {
   letter-spacing: 0.02em;
 }
 
+.quotes-grid .followers {
+  opacity: 0.6;
+}
+
 /* Section labels */
 .section-label {
   font-family: var(--serif);
