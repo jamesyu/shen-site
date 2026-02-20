@@ -259,30 +259,40 @@ nav {
   gap: 2rem;
 }
 
-.quotes-grid blockquote {
-  padding: 0;
-  border: none;
+.tweet {
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02);
 }
 
-.quotes-grid blockquote p {
-  font-family: var(--serif);
-  font-size: 1rem;
-  font-style: italic;
-  color: var(--fg);
-  line-height: 1.6;
+.tweet-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
   margin-bottom: 0.5rem;
 }
 
-.quotes-grid cite {
+.tweet-name {
   font-family: var(--sans);
-  font-size: 0.7rem;
-  font-style: normal;
-  color: var(--fg-dim);
-  letter-spacing: 0.02em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--fg);
 }
 
-.quotes-grid .followers {
-  opacity: 0.6;
+.tweet-handle {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--fg-dim);
+}
+
+.tweet p {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--fg);
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* Section labels */
