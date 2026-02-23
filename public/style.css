@@ -12,6 +12,7 @@
   --accent-hover: #dfc08a;
   --serif: 'Lora', Georgia, serif;
   --sans: 'Inter', -apple-system, sans-serif;
+  --display: 'Raleway', 'Inter', sans-serif;
 }
 
 html {
@@ -125,10 +126,10 @@ nav {
 }
 
 .cover-title {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 3.5rem;
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 300;
+  font-style: normal;
   letter-spacing: -0.02em;
   line-height: 1;
   color: #fff;
